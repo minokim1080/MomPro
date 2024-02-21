@@ -24,7 +24,7 @@ h1 {
 }
 
 .back {
-    width: 50%;
+    width: 750px;
 }
 
 .container {
@@ -72,6 +72,7 @@ h1 {
     font-size: 10px;
     color: #6C6C6C;
     margin: 12px 0 16px 0;
+    line-height: 13px;
 }
 
 .toggleTitle {
@@ -243,6 +244,7 @@ td {
     font-size: 10px;
     color: #6C6C6C;
     margin: 0 0 3px 0;
+    line-height: 13px;
 }
 
 .submit {
@@ -510,6 +512,11 @@ img {
 
 }
 
+.detailImg {
+    width: 85%;
+    height: auto;
+}
+
 .bold2 {
     font-weight: bold;
 }
@@ -524,4 +531,171 @@ img {
 
 .submit:hover {
     cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+
+    .back {
+        width: 480px;
+    }
+
+    .toggleTitleBox {
+        width: 70%;
+    }
+
+    .commentaryBox {
+        width: 80%;
+    }
+
+
+    /*th {*/
+    /*    font-size: 8px;*/
+    /*}*/
+
+    /*td {*/
+    /*    font-size: 6px !important;*/
+    /*}*/
+
+    /*.tableCommentary {*/
+    /*    font-size: 4px !important;*/
+    /*}*/
+
+    /*.toggleCommentary {*/
+    /*    font-size: 4px !important;*/
+    /*}*/
+}
+
+@media (max-width: 576px) {
+    .back {
+        width: 270px;
+    }
+
+    .toggleTitleBox {
+        width: 80%;
+    }
+
+    .commentaryBox {
+        width: 80%;
+    }
+
+    th {
+        font-size: 9px;
+    }
+
+    td {
+        font-size: 7px !important;
+    }
+
+    .tableCommentary {
+        font-size: 6px !important;
+    }
+
+    .toggleCommentary {
+        font-size: 6px !important;
+    }
+
+    .subTitle {
+        width: 80%;
+        margin: 0 auto;
+        font-size: 13px !important;
+    }
+
+    .number {
+        font-size: 14px;
+    }
+
+
+
+    .commentary {
+        width: 83%;
+        margin: 10px auto;
+        font-size: 8px;
+    }
+
+    .submit {
+        width: 70%;
+        font-size: 17px;
+    }
+
+    .result {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .resultCommentary {
+        font-size: 10px;
+    }
+
+    .calculateNumber {
+        font-size: 12px;
+    }
+
+    .calculateElement {
+        font-size: 12px;
+    }
+
+    .calculateContainer {
+        height: 20px;
+    }
+
+    .elementComment {
+        font-size: 7px;
+        line-height: 9px;
+    }
+
+    .proComment {
+        font-size: 7px;
+    }
+
+    .proTitle {
+        font-size: 15px;
+    }
+
+    .bold {
+        font-size: 7px;
+    }
+
+    .proDetailPre {
+        font-size: 7px;
+    }
+
+    .proDetailComment{
+        font-size: 7px;
+    }
+
+    .proDescription {
+        font-size: 9px;
+        padding: 0;
+        line-height: 11px;
+    }
+
+    img {
+        width: 10px;
+        height: auto;
+    }
+
+    .proPlusBox {
+        display:flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .oneLine {
+        padding-bottom: 1px;
+    }
+
+    .normalDescription {
+        font-size: 10px;
+    }
+
+    .lastComment {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .kakao {
+        width:70%;
+        height: 50px;
+        font-size: 17px;
+    }
 }
