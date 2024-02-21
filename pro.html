@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="init.css">
+        <link rel="stylesheet" href="style.css">
+        <style>
+        </style>
+        <title>월 이용요금 계산기</title>
+    </head>
+    <body>
+    <div class="back">
+        <div class="title">
+        <h1>월 이용요금 계산기</h1>
+            <p class="titleCommentary">서비스 실 이용요금 계산을 위해 아래의 정보를 입력 후 계산 버튼을 눌러 주세요!</p>
+        </div>
+        <div id="container1" class="container">
+            <h3 id="subtitle1" class="subTitle"><span class="number">01</span>&nbsp;&nbsp;지원대상 자녀수를 입력해주세요.</h3>
+                <select id="childNum">
+                    <option value="1">1명</option>
+                    <option value="2">2명</option>
+                    <option value="3">3명</option>
+                </select>
+                <p class="commentary">서울시 아이돌봄 서비스는 이용월 기준 만 24개월 ~ 만 36개월의 자녀만 지원 가능합니다.</p>
+            <div id="toggleTitleBox1" class="toggleTitleBox">
+            <div id="toggleBox1" class="toggleBox">
+            <div id="toggleTitle1" class="toggleTitle">
+            <p class="commentary">대상 자녀별 지원금 범위 상세 확인<span id="icon1" class="icon">∨</span></p>
+                </div>
+                </div>
+            <div id="toggle1" class="toggle hidden">
+            <div id="table1" class="table">
+                <table border="1">
+                    <th class ="thStart">돌봄 아동수</th>
+                    <th>영아 1명</th>
+                    <th>영아 2명</th>
+                    <th class="thEnd">영아 3명</th>
+                    <tr>
+                        <td class="bold top">지원조건<div class="br"><span id="tableCommentary1" class="tableCommentary">(월 최소 이용시간)</span></div></td>
+                        <td class="top end" colspan="3">월 20~40시간 이상 이용시</td>
+                    </tr>
+                    <tr>
+                        <td class="bold">시간당 지원액</td>
+                        <td>7,500원</td>
+                        <td>11,250원</td>
+                        <td class="end">15,000원</td>
+                    </tr>
+                    <tr>
+                        <td class="bold">월 지원 금액</td>
+                        <td>15~30만원</td>
+                        <td>22.5~45만원</td>
+                        <td class="end">30~60만원</td>
+                    </tr>
+                </table>
+                </div>
+                <div class="toggleCommentaryBox">
+                <div class="toggleCommentary">1. 돌봄비 최대 지원 자녀수 : 3명</div>
+                <div class="toggleCommentary">2. 돌봄비 지원 조건:</div>
+                <div class="toggleCommentary">&nbsp;&nbsp;&nbsp;&nbsp;<span class="spot">●</span> &nbsp;월 20시간 이상 돌봄서비스 이용시, 지원금 수령 가능</div>
+                <div class="toggleCommentary">&nbsp;&nbsp;&nbsp;&nbsp;<span class="spot">●</span> &nbsp;월 최대 40시간까지 시간당 지원금 적용</div>
+                <div class="toggleCommentary">3. 연간 지원금 총액:</div>
+                <div class="toggleCommentary">&nbsp;&nbsp;&nbsp;&nbsp;<span class="spot">●</span> &nbsp;월 40시간, 12개월 이용 시 지원금 총액 360만원 (자녀 1명 기준)</div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div id="container2" class="container">
+            <h3 id="subtitle2" class="subTitle"><span class="number">02</span>&nbsp;&nbsp;돌봄을 함께할 시터의 시급을 설정해주세요.</h3>
+                <select id="wagePerHour">
+                </select>
+                <p class="commentary">시터시급은 부모와 시터의 협의하에 설정할 수 있습니다.</p>
+            <div id="toggleTitleBox2" class="toggleTitleBox">
+                <div id="toggleBox2" class="toggleBox">
+                    <div id="toggleTitle2" class="toggleTitle">
+                        <p class="commentary">대상 자녀수에 따른 시터시급 현황 확인<span id="icon2" class="icon">∨</span></p>
+                    </div>
+                </div>
+                <div id="toggle2" class="toggle hidden">
+                    <div id="table2" class="table">
+                        <table border="1">
+                            <th class="thStart">돌봄 아동수</th>
+                            <th>시터 최저 시급</th>
+                            <th class="thEnd">시터 평균 시급</th>
+                            <tr>
+                                <td class="bold top">1인</td>
+                                <td class="top">10,000원</td>
+                                <td class="top end" >12,000원</td>
+                            </tr>
+                            <tr>
+                                <td class="bold">2인</td>
+                                <td>15,000원</td>
+                                <td class="end">17,000원</td>
+                            </tr>
+                            <tr>
+                                <td class="bold">3인</td>
+                                <td>25,000원</td>
+                                <td class="end">28,000원</td>
+                            </tr>
+                        </table>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div id="container3" class="container">
+            <h3 id="subtitle3" class="subTitle"><span class="number">03</span>&nbsp;&nbsp;예상 월 돌봄 이용시간을 입력해주세요.</h3>
+            <select id="hour">
+            </select>
+            <div class="commentaryBox">
+            <p class="commentary">※ 돌봄비 지원은 월 20~40시간 범위 내에서 실 사용 시간을 기준으로 지급됩니다.</p>
+            <p class="commentarySet">예시1) 월 18시간 이용 시 : 기준 시간 미달로 지원금 지급 X</p>
+            <p class="commentarySet">예시2) 월 21시간 이용 시 : 실 이용시간 21시간에 해당하는 지원금 지급</p>
+            <p class="commentarySet">예시3) 월 60시간 이용 시 : 월 최대 지원시간인 40시간에 해당하는 지원금 지급</p>
+                </div>
+        </div>
+        <button id="submit" class="submit">월 예상 돌봄비 계산</button>
+    </div>
+    <script>
+        const selectWage = document.getElementById("wagePerHour");
+
+        for (let price = 10000; price <= 50000; price += 500) {
+            let option = document.createElement("option");
+            option.value = price.toString();
+            option.text = price.toLocaleString() + "원";
+            selectWage.add(option);
+
+        }
+
+        const selectHour = document.getElementById("hour");
+
+        for (let hours = 20; hours <= 496; hours++) {
+            const option = document.createElement("option");
+            option.value = hours.toString();
+            option.text = hours + "시간";
+            selectHour.add(option);
+        }
+
+        function toggleElement(toggle1, icon1) {
+            let target = document.getElementById(toggle1);
+            let icon = document.getElementById(icon1);
+
+            if (target.classList.contains("hidden")) {
+                target.classList.remove("hidden");
+                icon.classList.add("rotated");
+            } else {
+                target.classList.add("hidden");
+                icon.classList.remove("rotated");
+            }
+        }
+
+        const toggleTitle1 = document.getElementById("toggleTitle1")
+        const toggleTitle2 = document.getElementById("toggleTitle2")
+
+        toggleTitle1.addEventListener('click', function(){toggleElement("toggle1", "icon1")})
+        toggleTitle2.addEventListener('click', function(){toggleElement("toggle2", "icon2")})
+
+
+        const submit = document.getElementById("submit");
+
+        submit.addEventListener('click', function () {
+            const children = document.getElementById("childNum").value;
+            const wagePerHour = document.getElementById("wagePerHour").value;
+            const hour = document.getElementById("hour").value;
+
+            let subsidy;
+
+            if(hour>40 && children==1){
+                subsidy = 300000;
+            } else if(hour>40 && children==2) {
+                subsidy = 450000;
+            } else if(hour>40 && children==3) {
+                subsidy = 600000;
+            } else if (children==1){
+                subsidy = hour*7500;
+            } else if (children==2){
+                subsidy = hour*11250;
+            } else {
+                subsidy = hour*15000;
+            }
+
+
+            sessionStorage.setItem('children', children)
+            sessionStorage.setItem('wagePerHour', wagePerHour)
+            sessionStorage.setItem('hour', hour)
+            sessionStorage.setItem('subsidy', subsidy)
+
+            alert("성공")
+
+            window.location.href = 'result.html';
+        })
+
+    </script>
+    </body>
+</html>

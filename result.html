@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="init.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+    </style>
+    <title>월 예상 이용요금 계산 결과</title>
+</head>
+<body>
+<div class="back">
+    <div class="title">
+        <h1>월 이용요금 계산 결과</h1>
+    </div>
+    <div id="container1" class="container">
+        <h3 id="result1" class="result">Pro 서비스 월 결제 금액 : <span id="proResult1"></span>원</h3>
+        <p class="resultCommentary">일반돌봄 대비 월 <span id="difference1"></span>원을 절약할 수 있습니다.</p>
+        <p class="resultCommentary">※일반 돌봄 월 결제 금액 : <span id="normalResult1"></span>원</p>
+    </div>
+    <div id="container2" class="container">
+        <div id="toggleTitleBox2" class="toggleTitleBox">
+            <div id="toggleBox2" class="toggleBox">
+                <div id="toggleTitle2" class="toggleTitle">
+                    <p class="commentary">Pro 서비스 돌봄비 계산 확인하기<span id="icon2" class="icon">∨</span></p>
+                </div>
+            </div>
+            <div id="toggle2" class="toggle hidden">
+                <div class="calculateNumberingContainer">
+                    <div class="calculateNumber">1)</div>
+                <div class="calculateContainer"><div id="costPerHour1" class="calculateElement three"></div>=
+                    <div id="wagePerHour1" class="calculateElement two"></div>+<div id="charge1" class="calculateElement two"></div>
+                </div>
+                </div>
+                <div class="elementCommentBox">
+                    <div class="elementComment five">시간당 서비스 이용 금액</div>
+                    <div class="elementComment three">시터 시급</div>
+                    <div class="elementComment three">서비스 이용 수수료*</div>
+                </div>
+                <div class="proComment">*서비스 이용 수수료 = 시터시급*30%</div>
+                <div class="proComment">*상세 서비스 혜택 아래 이미지 참고</div>
+                <div class= "proTable">
+                    <table border="1">
+                        <th colspan="2" class="proTitle">맘시터Pro 서비스 혜택</th>
+                        <tr>
+                            <td class="tdStart tdTop">요약</td>
+                            <td class="tdEnd tdTop"><div class="summary1">전담 매니저가 시터 매칭부터</div> <div class="summary2">지원금 정산까지 AtoZ를 관리해주는 <span class="bold">돌봄 서비스</span></div></td>
+                        </tr>
+                        <tr>
+                            <td class="tdStart tdBottom">상세</td>
+                            <td class="tdEnd tdBottom">
+                                <div class="proDetailBox">
+                                    <div class="proDetailLineBox">
+                                <div class="proPlusBox two"><img src="Frame%20427318375.png" alt="십자아이콘"></div><div class="proDescription eight oneLine">시터 급여</div>
+                                    </div>
+                                    <div class="proDetailLineBox">
+                                <div class="proPlusBox two"><img src="Frame%20427318375.png" alt="십자아이콘"></div><div class="proDescription eight oneLine">무제한 시터 무료 탐색</div>
+                                        </div>
+                                    <div class="proDetailLineBox">
+                                <div class="proPlusBox two twoLinePlus"><img src="Frame%20427318375.png" alt="십자아이콘"></div><div class="proDetailPreBox eight"><div class="proDetailPre">pro 전담 매니저가</div><div class="proDescription">시터 직접 매칭 지원
+                                <span class="proDetailComment">(평균 7일 내 매칭완료)</span></div></div>
+                                        </div>
+                                    <div class="proDetailLineBox">
+                                    <div class="proPlusBox two twoLinePlus"><img src="Frame%20427318375.png" alt="십자아이콘"></div><div class="proDetailPreBox eight"><div class="proDetailPre">복잡한 지원금 정산, 놓치지 않도록
+                                    </div><div class="proDescription">매월 정산 지원</div></div>
+                                        </div>
+                                    <div class="proDetailLineBox">
+                                    <div class="proPlusBox two"><img src="Frame%20427318375.png" alt="십자아이콘"></div><div class="proDetailPreBox eight"><div class="proDescription subCommentary">모든 돌봄 활동 100% 보험 가입<br>
+                                        <span class="proDetailComment">(시터 과실로 인한 대인/대물 사고 보장)</span></div></div>
+                                        </div>
+                                    <div class="proDetailLineBox">
+                                    <div class="proPlusBox two"><img src="Frame%20427318375.png" alt="십자아이콘"></div><div class="proDescription eight oneLine">실시간 전화<span class="spot">●</span>카카오톡 고객상담</div>
+                                        </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="calculateNumberingContainer">
+                    <div class="calculateNumber">2)</div>
+                    <div class="calculateContainer"><div id="regularPrice1" class="calculateElement two"></div>=
+                        <div id="costPerHour2" class="calculateElement two"></div>*<div id="hour1" class="calculateElement two"></div>
+                    </div>
+                </div>
+                <div class="elementCommentBox">
+                    <div class="elementComment four left2">정가</div>
+                    <div class="elementComment four">시간당 서비스 이용 금액</div>
+                    <div class="elementComment three">월 돌봄시간</div>
+                </div>
+
+                <div class="calculateNumberingContainer">
+                    <div class="calculateNumber">3)</div>
+                    <div class="calculateContainer"><div id="subsidy1" class="calculateElement two"></div>=
+                        <div id="subsidyPerHour1" class="calculateElement two"></div>*<div id="hour2" class="calculateElement two"></div>
+                    </div>
+                </div>
+                <div class="elementCommentBox">
+                    <div class="elementComment four">서울시 지원금</div>
+                    <div class="elementComment three left1">시간당 지원금</div>
+                    <div class="elementComment three">월 돌봄시간<br>(최대 40시간까지 적용)</div>
+                </div>
+
+
+
+                <div class='resultToggleCommentary'>*지원금 조건 아래 참고</div>
+                <div id="table1" class="table">
+                    <table border="1">
+                        <th class ="thStart">돌봄 아동수</th>
+                        <th>영아 1명</th>
+                        <th>영아 2명</th>
+                        <th class="thEnd">영아 3명</th>
+                        <tr>
+                            <td class="bold top">지원조건<div class="br"><span id="tableCommentary1" class="tableCommentary">(월 최소 이용시간)</span></div></td>
+                            <td class="top end" colspan="3">월 20~40시간 이상 이용시</td>
+                        </tr>
+                        <tr>
+                            <td class="bold">시간당 지원액</td>
+                            <td>7,500원</td>
+                            <td>11,250원</td>
+                            <td class="end">15,000원</td>
+                        </tr>
+                        <tr>
+                            <td class="bold">월 지원 금액</td>
+                            <td>15~30만원</td>
+                            <td>22.5~45만원</td>
+                            <td class="end">30~60만원</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="toggleCommentaryBox">
+                    <div class="toggleCommentary">1. 돌봄비 최대 지원 자녀수 : 3명</div>
+                    <div class="toggleCommentary">2. 돌봄비 지원 조건:</div>
+                    <div class="toggleCommentary">&nbsp;&nbsp;&nbsp;&nbsp;<span class="spot">●</span> &nbsp;월 20시간 이상 돌봄서비스 이용시, 지원금 수령 가능</div>
+                    <div class="toggleCommentary">&nbsp;&nbsp;&nbsp;&nbsp;<span class="spot">●</span> &nbsp;월 최대 40시간까지 시간당 지원금 적용</div>
+                    <div class="toggleCommentary">3. 연간 지원금 총액:</div>
+                    <div class="toggleCommentary">&nbsp;&nbsp;&nbsp;&nbsp;<span class="spot">●</span> &nbsp;월 40시간, 12개월 이용 시 지원금 총액 360만원 (자녀 1명 기준)</div>
+                </div>
+
+                <div class="calculateNumberingContainer">
+                    <div class="calculateNumber">4)</div>
+                    <div class="calculateContainer"><div id="proResult2" class="calculateElement two red"></div>=
+                        <div id="regularPrice2" class="calculateElement two"></div>-<div id="subsidy2" class="calculateElement two"></div>
+                    </div>
+                </div>
+                <div class="elementCommentBox">
+                    <div class="elementComment four">실 결제 금액</div>
+                    <div class="elementComment three left3">Pro 서비스 정가</div>
+                    <div class="elementComment three">서울시 지원금</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="container3" class="container">
+        <div id="toggleTitleBox3" class="toggleTitleBox">
+            <div id="toggleBox3" class="toggleBox">
+                <div id="toggleTitle3" class="toggleTitle">
+                    <p class="commentary">일반 돌봄비 계산 확인하기<span id="icon3" class="icon">∨</span></p>
+                </div>
+            </div>
+            <div id="toggle3" class="toggle hidden">
+                <div class="normalDescription">
+                    <span class="bold2">일반 돌봄이란?</span> <br>
+                    맘시터Pro 서비스가 아닌 부모 시터간 직접 거래하는 돌봄
+                </div>
+
+                <div class="calculateNumberingContainer">
+                    <div class="calculateContainer"><div id="normalResult2" class="calculateElement three"></div>=
+                        <div id="wagePerHour2" class="calculateElement two"></div>*<div id="hour3" class="calculateElement two"></div>
+                    </div>
+                </div>
+                <div class="elementCommentBox">
+                    <div class="elementComment four left4">실 결제 금액</div>
+                    <div class="elementComment three left3">시터시급</div>
+                    <div class="elementComment three left5">월 돌봄시간</div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <p class="lastComment">이용 금액 외 상세 문의는 아래 '카카오톡 문의하기'를 눌러주세요!</p>
+    <button id="kakao" class="kakao">카카오톡 문의하기</button>
+</div>
+<script>
+    var children = parseInt(sessionStorage.getItem('children'));
+    var wagePerHour = parseInt(sessionStorage.getItem('wagePerHour'));
+    var hour = parseInt(sessionStorage.getItem('hour'));
+    var subsidy = parseInt(sessionStorage.getItem('subsidy'));
+
+    var charge = wagePerHour*0.3;
+    var costPerHour = wagePerHour + charge;
+    var regularPrice = costPerHour*hour;
+    var proResult = regularPrice - subsidy;
+    var normalResult = wagePerHour*hour;
+    var subsidyPerHour;
+
+    if(children==1){
+        subsidyPerHour=7500;
+    } else if(children==2){
+        subsidyPerHour=11250;
+    } else {
+        subsidyPerHour=15000;
+    }
+
+    document.getElementById("proResult1").textContent = proResult;
+    document.getElementById("difference1").textContent = normalResult - proResult;
+    document.getElementById("normalResult1").textContent = normalResult;
+
+    document.getElementById("costPerHour1").textContent = costPerHour;
+    document.getElementById("wagePerHour1").textContent = wagePerHour;
+    document.getElementById("charge1").textContent = charge;
+
+    document.getElementById("regularPrice1").textContent = regularPrice;
+    document.getElementById("costPerHour2").textContent = costPerHour;
+    document.getElementById("hour1").textContent = hour;
+
+    document.getElementById("subsidy1").textContent = subsidy;
+    document.getElementById("subsidyPerHour1").textContent = subsidyPerHour;
+    document.getElementById("hour2").textContent = hour;
+
+    document.getElementById("proResult2").textContent = proResult;
+    document.getElementById("regularPrice2").textContent = regularPrice;
+    document.getElementById("subsidy2").textContent = subsidy;
+
+    document.getElementById("normalResult2").textContent = normalResult;
+    document.getElementById("wagePerHour2").textContent = wagePerHour;
+    document.getElementById("hour3").textContent = hour;
+
+
+    function toggleElement(toggle1, icon1) {
+        let target = document.getElementById(toggle1);
+        let icon = document.getElementById(icon1);
+
+        if (target.classList.contains("hidden")) {
+            target.classList.remove("hidden");
+            icon.classList.add("rotated");
+        } else {
+            target.classList.add("hidden");
+            icon.classList.remove("rotated");
+        }
+    }
+
+    const toggleTitle2 = document.getElementById("toggleTitle2")
+    const toggleTitle3 = document.getElementById("toggleTitle3")
+
+    toggleTitle2.addEventListener('click', function(){toggleElement("toggle2", "icon2")})
+    toggleTitle3.addEventListener('click', function(){toggleElement("toggle3", "icon3")})
+
+</script>
+</body>
+</html>
