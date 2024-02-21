@@ -17,7 +17,7 @@
         </div>
         <div id="container1" class="container">
             <h3 id="subtitle1" class="subTitle"><span class="number">01</span>&nbsp;&nbsp;지원대상 자녀수를 입력해주세요.</h3>
-                <select id="childNum">
+                <select id="childNum" class="select1">
                     <option value="1">1명</option>
                     <option value="2">2명</option>
                     <option value="3">3명</option>
@@ -29,7 +29,7 @@
             <p class="commentary">대상 자녀별 지원금 범위 상세 확인<span id="icon1" class="icon">∨</span></p>
                 </div>
                 </div>
-            <div id="toggle1" class="toggle">
+            <div id="toggle1" class="toggle hidden">
             <div id="table1" class="table">
                 <table border="1">
                     <th class ="thStart">돌봄 아동수</th>
@@ -67,7 +67,7 @@
         </div>
         <div id="container2" class="container">
             <h3 id="subtitle2" class="subTitle"><span class="number">02</span>&nbsp;&nbsp;돌봄을 함께할 시터의 시급을 설정해주세요.</h3>
-                <select id="wagePerHour">
+                <select id="wagePerHour" class="select2">
                 </select>
                 <p class="commentary">시터시급은 부모와 시터의 협의하에 설정할 수 있습니다.</p>
             <div id="toggleTitleBox2" class="toggleTitleBox">
@@ -104,7 +104,7 @@
         </div>
         <div id="container3" class="container">
             <h3 id="subtitle3" class="subTitle"><span class="number">03</span>&nbsp;&nbsp;예상 월 돌봄 이용시간을 입력해주세요.</h3>
-            <select id="hour">
+            <select id="hour" class="select3">
             </select>
             <div class="commentaryBox">
             <p class="commentary">※ 돌봄비 지원은 월 20~40시간 범위 내에서 실 사용 시간을 기준으로 지급됩니다.</p>
@@ -183,8 +183,6 @@
             sessionStorage.setItem('wagePerHour', wagePerHour)
             sessionStorage.setItem('hour', hour)
             sessionStorage.setItem('subsidy', subsidy)
-
-            alert("성공")
 
             window.location.href = 'result.html';
         })

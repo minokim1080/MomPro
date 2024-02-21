@@ -53,9 +53,6 @@ h1 {
     font-size: 15px;
 }
 
-select {
-    margin: 15px 0 15px 0;
-}
 
 .toggleBox {
     align-items: center;
@@ -89,13 +86,46 @@ select {
 }
 
 select {
-    width: 136px; /* 원하는 너비설정 */
-    height: 37px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    background: url(https://farm1.staticflickr.com/379/19928272501_4ef877c265_t.jpg) no-repeat 95% 50%;
+    /*width: 136px; !* 원하는 너비설정 *!*/
+    /*height: 37px;*/
+    /*box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
+    background: url('arrow.png') no-repeat 90% 50%;
     -webkit-appearance: none; /* 네이티브 외형 감추기 */
     -moz-appearance: none;
     appearance: none;
+    width: 130px;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 12px 13px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    height: 40px;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+.select1 {
+    width: 60px;
+    background: url('arrow.png') no-repeat 80% 52%;
+    background-size: 15%;
+}
+
+.select2 {
+    width: 120px;
+    background: url('arrow.png') no-repeat 85% 52%;
+    background-size: 12%;
+    padding: 12px 20px;
+}
+
+.select3 {
+    width: 100px;
+    background: url('arrow.png') no-repeat 90% 52%;
+    background-size: 13%;
+    padding: 12px 20px;
 }
 
 select:hover {
