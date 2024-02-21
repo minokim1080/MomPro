@@ -491,3 +491,7 @@ img {
 .kakao:hover {
     cursor: pointer;
 }
+
+.submit:hover {
+    cursor: pointer;
+}
