@@ -151,6 +151,7 @@ select:hover {
 }
 
 .toggleCommentary {
+    font-family: "Noto Sans";
     text-align: left;
     font-size: 13px;
     margin-bottom: 3px;
