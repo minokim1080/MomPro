@@ -162,6 +162,16 @@
     <button id="kakao" class="kakao">카카오톡 문의하기</button>
 </div>
 <script>
+    window.onload = function() {
+        let referer = document.referrer;
+
+        if (referer.includes("index.html")) {
+
+        } else {
+            location.href = "index.html";
+        }
+    };
+
     var children = parseInt(sessionStorage.getItem('children'));
     var wagePerHour = parseInt(sessionStorage.getItem('wagePerHour'));
     var hour = parseInt(sessionStorage.getItem('hour'));
