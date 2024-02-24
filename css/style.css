@@ -34,7 +34,7 @@ h1 {
     margin-top: 40px;
     margin-bottom: 80px;
     width: 100%;
-    padding: 50px 0 30px 0;
+    padding: 40px 0 40px 0;
     justify-content: center;
     align-content: center;
     align-items: center;
@@ -97,8 +97,8 @@ select {
     /*box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
     /* background: url("arrow.png") no-repeat 90% 50%; */
     /* -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none; */
+      -moz-appearance: none;
+      appearance: none; */
     /* width: 250px; */
     border: 1px solid #c4c4c4;
     box-sizing: border-box;
@@ -157,7 +157,7 @@ select:hover {
     margin-bottom: 3px;
     color: gray;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     line-height: 1.2;
 }
 
@@ -166,7 +166,7 @@ select:hover {
 }
 
 .spot {
-    font-size: 3px;
+    /* font-size: 3px; */
     /*padding-bottom: 30px;*/
 }
 
@@ -192,6 +192,9 @@ table {
     width: 100%;
 }
 
+.multi {
+    padding-top: 5px;
+}
 th {
     border: 1px solid darkgray;
     font-family: "Noto Sans";
@@ -279,7 +282,7 @@ td {
 
 .resultCommentary {
     font-family: "Inter";
-    font-size: 11px;
+    font-size: 14px;
     line-height: 16px;
 }
 
@@ -305,7 +308,7 @@ td {
 .resultToggleCommentary {
     font-family: "Noto Sans";
     text-align: left;
-    font-size: 9px;
+    font-size: 12px;
     margin-bottom: 5px;
     display: flex;
     align-items: center;
@@ -314,10 +317,16 @@ td {
 .elementCommentBox {
     display: flex;
     margin-bottom: 30px;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+.transparent {
+    color: transparent;
+    /* display: none; */
 }
 
 .calculateNumberingContainer {
-    display: flex;
+    /* display: flex; */
     margin-top: 80px;
     justify-content: center;
     align-items: center;
@@ -329,13 +338,21 @@ td {
     width: 100%;
     margin-bottom: 5px;
     height: 25px;
-    justify-content: center;
+    /* justify-content: space-around; */
     align-items: center;
 }
 
 .elementComment {
     font-family: "Noto Sans";
-    font-size: 10px;
+    font-size: 13px;
+}
+
+.odd {
+    flex: 4;
+}
+
+.even {
+    flex: 1;
 }
 
 .calculateNumber {
@@ -343,6 +360,7 @@ td {
     font-weight: bold;
     margin-right: 5px;
     padding-bottom: 8px;
+    text-align: left;
 }
 
 .calculateElement {
@@ -350,46 +368,10 @@ td {
     font-weight: bold;
 }
 
-.five {
-    flex: 5;
-}
-
-.two {
-    flex: 2;
-}
-
-.three {
-    flex: 3;
-}
-
-.one {
-    flex: 1;
-}
-
-.four {
-    flex: 4;
-}
-
-.six {
-    flex: 6;
-}
-
-.seven {
-    flex: 7;
-}
-
-.eight {
-    flex: 8;
-}
-
-.nine {
-    flex: 9;
-}
-
 .proComment {
     text-align: left;
     font-family: "Noto Sans";
-    font-size: 10px;
+    font-size: 12px;
     margin-bottom: 5px;
 }
 
@@ -450,6 +432,7 @@ img {
 
 .summary1 {
     font-family: "Noto Sans";
+    padding: 0 8px;
 }
 
 .proDetailBox {
@@ -498,17 +481,17 @@ img {
     padding-top: 2px;
 }
 
-.left1 {
-    padding-right: 4px;
+/* .left1 {
+  padding-right: 4px;
 }
 
 .left2 {
-    padding-left: 3px;
+  padding-left: 3px;
 }
 
 .left3 {
-    padding-left: 15px;
-}
+  padding-left: 15px;
+} */
 
 .left4 {
     padding-left: 5px;
@@ -519,7 +502,7 @@ img {
     font-size: 14px;
     text-align: left;
     line-height: 18px;
-    margin-top: 70px;
+    margin-top: 40px;
 }
 
 .detailImg {
@@ -580,6 +563,9 @@ img {
     .back {
         /* width: 270px; */
     }
+    .container {
+        margin-bottom: 40px;
+    }
     select {
         width: 50%;
     }
@@ -638,15 +624,18 @@ img {
     }
 
     .resultCommentary {
-        font-size: 10px;
+        font-size: 13px;
+    }
+    .calculateNumberingContainer {
+        margin-top: 40px;
     }
 
     .calculateNumber {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .calculateElement {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .calculateContainer {
@@ -654,12 +643,12 @@ img {
     }
 
     .elementComment {
-        font-size: 7px;
-        line-height: 9px;
+        font-size: 11px;
+        line-height: 1.2;
     }
 
     .proComment {
-        font-size: 7px;
+        font-size: 12px;
     }
 
     .proTitle {
@@ -700,11 +689,11 @@ img {
     }
 
     .normalDescription {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .lastComment {
-        font-size: 10px;
+        font-size: 11px;
         line-height: 12px;
     }
 
@@ -717,21 +706,21 @@ img {
 
 @font-face {
     font-family: "Noto Sans";
-    src: url('../font/Noto Sans.ttf') format('truetype');
+    src: url("../font/Noto Sans.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "G마켓 산스 TTF";
-    src: url('../font/GmarketSansTTFBold.ttf') format('truetype');
+    src: url("../font/GmarketSansTTFBold.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Inter";
-    src: url('../font/Inter.ttf') format('truetype');
+    src: url("../font/Inter.ttf") format("truetype");
 }
 
 .bigPro {
-    font-size: 25px !important;
+    font-size: 20px !important;
 }
 
 /*body {*/
@@ -790,7 +779,6 @@ img {
 /*    border-radius: 10px;*/
 /*}*/
 
-
 /*.number {*/
 /*    font-family: "G마켓 산스 TTF";*/
 /*    font-weight: bold;*/
@@ -803,7 +791,6 @@ img {
 /*    font-weight: bold;*/
 /*    font-size: 15px;*/
 /*}*/
-
 
 /*.toggleBox {*/
 /*    align-items: center;*/
@@ -927,7 +914,6 @@ img {
 /*    margin-top: 10px;*/
 /*}*/
 
-
 /*table{*/
 /*    width:100%;*/
 /*}*/
@@ -950,7 +936,6 @@ img {
 /*.thEnd {*/
 /*    border-top-right-radius: 5px;*/
 /*}*/
-
 
 /*td {*/
 /*    font-family: "Noto Sans";*/
@@ -1132,328 +1117,3 @@ img {
 /*    text-align: left;*/
 /*    font-family: "Noto Sans";*/
 /*    font-size: 10px;*/
-/*    margin-bottom: 5px;*/
-/*}*/
-
-/*.proTable {*/
-/*    margin-bottom: 80px;*/
-/*}*/
-
-/*.proTitle {*/
-/*    background: #FF7000;*/
-/*    font-family: "G마켓 산스 TTF";*/
-/*    color: #FFFFFF;*/
-/*    font-size: 20px;*/
-/*}*/
-
-/*.tdStart{*/
-/*    font-family: "Noto Sans";*/
-/*    font-weight: bold;*/
-/*    border-left: none;*/
-/*    background: #F8F8F8;*/
-/*    border-right: none;*/
-/*    text-align: center !important;*/
-/*    width: 20%;*/
-
-/*}*/
-
-/*.tdEnd {*/
-/*    border-right: none;*/
-/*    border-left: none;*/
-/*    border-bottom: none;*/
-/*}*/
-
-/*.tdTop{*/
-/*    border-top:none;*/
-/*    border-bottom: 1px solid black;*/
-/*    padding-top: 15px;*/
-/*    padding-bottom: 15px;*/
-/*    line-height: 14px;*/
-/*}*/
-
-/*.tdBottom{*/
-/*    padding-top: 35px;*/
-/*    padding-bottom: 35px;*/
-/*    border-bottom:none ;*/
-/*}*/
-
-/*img {*/
-/*    display: block;*/
-/*    margin-left: auto;*/
-/*    margin-right: 5px;*/
-/*}*/
-
-/*.bold {*/
-/*    font-weight: bold;*/
-/*}*/
-
-/*.summary1 {*/
-/*    font-family: "Noto Sans";*/
-/*    text-align: left;*/
-/*}*/
-
-/*.proDetailBox {*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*}*/
-
-/*.proDetailLineBox {*/
-/*    display: flex;*/
-/*    flex-direction: row;*/
-/*    justify-content: left;*/
-/*    margin-top: 10px;*/
-/*    margin-bottom: 10px;*/
-
-/*}*/
-
-/*.proDescription {*/
-/*    text-align: left;*/
-/*    font-family: "Noto Sans";*/
-/*    font-weight: bold;*/
-/*    font-size: 14px;*/
-/*}*/
-
-/*.proDetailComment {*/
-/*    font-family: "Noto Sans";*/
-/*    color: #B1B1B1;*/
-/*    font-size: 10px;*/
-/*    font-weight: lighter;*/
-/*}*/
-
-/*.proDetailPre {*/
-/*    text-align: left;*/
-/*    font-size: 11px;*/
-/*}*/
-
-/*.subCommentary {*/
-/*    line-height: 15px;*/
-/*}*/
-
-/*.twoLinePlus {*/
-/*    display:flex;*/
-/*    justify-content: flex-end;*/
-/*    align-items: center;*/
-/*}*/
-
-/*.oneLine {*/
-/*    padding-top: 2px;*/
-/*}*/
-
-/*.left1 {*/
-/*    padding-right: 4px;*/
-/*}*/
-
-/*.left2 {*/
-/*    padding-left: 3px ;*/
-/*}*/
-
-/*.left3 {*/
-/*    padding-left: 15px;*/
-/*}*/
-
-/*.left4 {*/
-/*    padding-left: 5px;*/
-/*}*/
-
-/*.normalDescription {*/
-/*    font-family: "Noto Sans";*/
-/*    font-size: 14px;*/
-/*    text-align: left;*/
-/*    line-height: 18px;*/
-/*    margin-top: 70px;*/
-
-/*}*/
-
-/*.detailImg {*/
-/*    width: 85%;*/
-/*    height: auto;*/
-/*}*/
-
-/*.bold2 {*/
-/*    font-weight: bold;*/
-/*}*/
-
-/*.red {*/
-/*    color: #FF0000;*/
-/*}*/
-
-/*.kakao:hover {*/
-/*    cursor: pointer;*/
-/*}*/
-
-/*.submit:hover {*/
-/*    cursor: pointer;*/
-/*}*/
-
-/*@media (max-width: 1024px) {*/
-
-/*    .back {*/
-/*        width: 480px;*/
-/*    }*/
-
-/*    .toggleTitleBox {*/
-/*        width: 70%;*/
-/*    }*/
-
-/*    .commentaryBox {*/
-/*        width: 80%;*/
-/*    }*/
-
-
-/*    !*th {*!*/
-/*    !*    font-size: 8px;*!*/
-/*    !*}*!*/
-
-/*    !*td {*!*/
-/*    !*    font-size: 6px !important;*!*/
-/*    !*}*!*/
-
-/*    !*.tableCommentary {*!*/
-/*    !*    font-size: 4px !important;*!*/
-/*    !*}*!*/
-
-/*    !*.toggleCommentary {*!*/
-/*    !*    font-size: 4px !important;*!*/
-/*    !*}*!*/
-/*}*/
-
-/*@media (max-width: 576px) {*/
-/*    .back {*/
-/*        width: 270px;*/
-/*    }*/
-
-/*    .toggleTitleBox {*/
-/*        width: 80%;*/
-/*    }*/
-
-/*    .commentaryBox {*/
-/*        width: 80%;*/
-/*    }*/
-
-/*    th {*/
-/*        font-size: 9px;*/
-/*    }*/
-
-/*    td {*/
-/*        font-size: 7px !important;*/
-/*    }*/
-
-/*    .tableCommentary {*/
-/*        font-size: 6px !important;*/
-/*    }*/
-
-/*    .toggleCommentary {*/
-/*        font-size: 6px !important;*/
-/*    }*/
-
-/*    .subTitle {*/
-/*        width: 80%;*/
-/*        margin: 0 auto;*/
-/*        font-size: 13px !important;*/
-/*    }*/
-
-/*    .number {*/
-/*        font-size: 14px;*/
-/*    }*/
-
-
-
-/*    .commentary {*/
-/*        width: 83%;*/
-/*        margin: 10px auto;*/
-/*        font-size: 8px;*/
-/*    }*/
-
-/*    .submit {*/
-/*        width: 70%;*/
-/*        font-size: 17px;*/
-/*    }*/
-
-/*    .result {*/
-/*        font-size: 18px;*/
-/*        line-height: 25px;*/
-/*    }*/
-
-/*    .resultCommentary {*/
-/*        font-size: 10px;*/
-/*    }*/
-
-/*    .calculateNumber {*/
-/*        font-size: 12px;*/
-/*    }*/
-
-/*    .calculateElement {*/
-/*        font-size: 12px;*/
-/*    }*/
-
-/*    .calculateContainer {*/
-/*        height: 20px;*/
-/*    }*/
-
-/*    .elementComment {*/
-/*        font-size: 7px;*/
-/*        line-height: 9px;*/
-/*    }*/
-
-/*    .proComment {*/
-/*        font-size: 7px;*/
-/*    }*/
-
-/*    .proTitle {*/
-/*        font-size: 15px;*/
-/*    }*/
-
-/*    .bold {*/
-/*        font-size: 7px;*/
-/*    }*/
-
-/*    .proDetailPre {*/
-/*        font-size: 7px;*/
-/*    }*/
-
-/*    .proDetailComment{*/
-/*        font-size: 7px;*/
-/*    }*/
-
-/*    .proDescription {*/
-/*        font-size: 9px;*/
-/*        padding: 0;*/
-/*        line-height: 11px;*/
-/*    }*/
-
-/*    img {*/
-/*        width: 10px;*/
-/*        height: auto;*/
-/*    }*/
-
-/*    .proPlusBox {*/
-/*        display:flex;*/
-/*        justify-content: flex-end;*/
-/*        align-items: center;*/
-/*    }*/
-
-/*    .oneLine {*/
-/*        padding-bottom: 1px;*/
-/*    }*/
-
-/*    .normalDescription {*/
-/*        font-size: 10px;*/
-/*    }*/
-
-/*    .lastComment {*/
-/*        font-size: 10px;*/
-/*        line-height: 12px;*/
-/*    }*/
-
-/*    .kakao {*/
-/*        width:70%;*/
-/*        height: 50px;*/
-/*        font-size: 17px;*/
-/*        font-family: "Noto Sans";*/
-/*    }*/
-
-/*}*/
-
-/*.bigPro {*/
-/*    font-size: 25px !important;*/
-/*}*/
