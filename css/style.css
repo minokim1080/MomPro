@@ -9,6 +9,21 @@ body {
     background: #ffefe3;
 }
 
+@font-face {
+    font-family: "Noto Sans";
+    src: url("../font/Noto Sans.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "G마켓 산스 TTF";
+    src: url("../font/GmarketSansTTFBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../font/Inter.ttf") format("truetype");
+}
+
 h1 {
     font-family: "G마켓 산스 TTF";
     /* font-family: ""; */
@@ -506,7 +521,7 @@ img {
 }
 
 .detailImg {
-    width: 85%;
+    width: 80%;
     height: auto;
 }
 
@@ -579,6 +594,11 @@ img {
 
     .commentaryBox {
         width: 80%;
+    }
+
+    .detailImg {
+        width: 85%;
+        height: auto;
     }
 
     th {
@@ -678,6 +698,11 @@ img {
         height: auto;
     }
 
+    .detailImg {
+        width: 85%;
+        height: auto;
+    }
+
     .proPlusBox {
         display: flex;
         justify-content: flex-end;
@@ -704,416 +729,6 @@ img {
     }
 }
 
-@font-face {
-    font-family: "Noto Sans";
-    src: url("../font/Noto Sans.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: "G마켓 산스 TTF";
-    src: url("../font/GmarketSansTTFBold.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: "Inter";
-    src: url("../font/Inter.ttf") format("truetype");
-}
-
 .bigPro {
     font-size: 20px !important;
 }
-
-/*body {*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*    position: relative;*/
-/*    !*height: 100vh;*!*/
-/*    text-align: center;*/
-/*    padding: 0 18px;*/
-/*    background: #FFEFE3;*/
-/*}*/
-
-/*@font-face {*/
-/*    font-family: "Noto Sans";*/
-/*    src: url('../font/Noto Sans.ttf') format('truetype');*/
-/*}*/
-
-/*@font-face {*/
-/*    font-family: "G마켓 산스 TTF";*/
-/*    src: url('../font/GmarketSansTTFBold.ttf') format('truetype');*/
-/*}*/
-
-/*@font-face {*/
-/*    font-family: "Inter";*/
-/*    src: url('../font/Inter.ttf') format('truetype');*/
-/*}*/
-
-/*h1 {*/
-/*    font-family: "G마켓 산스 TTF";*/
-/*    font-weight: bold;*/
-/*    font-size: 47px;*/
-/*    margin-top: 34px;*/
-/*    margin-bottom: 18px;*/
-/*}*/
-
-/*.titleCommentary{*/
-/*    font-family: "Inter";*/
-/*    font-weight: 550;*/
-/*    font-size: 11px;*/
-/*}*/
-
-/*.back {*/
-/*    width: 750px;*/
-/*}*/
-
-/*.container {*/
-/*    background: white;*/
-/*    margin-top: 40px;*/
-/*    margin-bottom: 80px;*/
-/*    width: 100%;*/
-/*    padding: 30px 0;*/
-/*    justify-content: center;*/
-/*    align-content: center;*/
-/*    align-items: center;*/
-/*    border-radius: 10px;*/
-/*}*/
-
-/*.number {*/
-/*    font-family: "G마켓 산스 TTF";*/
-/*    font-weight: bold;*/
-/*    color: #FF7000;*/
-/*    font-size: 17px;*/
-/*}*/
-
-/*.subTitle {*/
-/*    font-family: "Noto Sans";*/
-/*    font-weight: bold;*/
-/*    font-size: 15px;*/
-/*}*/
-
-/*.toggleBox {*/
-/*    align-items: center;*/
-/*    width: 100%;*/
-/*}*/
-
-/*.toggleTitleBox {*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*    width: 50%;*/
-/*    margin: 0 auto;*/
-
-/*}*/
-
-/*.commentary {*/
-/*    font-family: "Noto Sans";*/
-/*    font-size: 10px;*/
-/*    color: #6C6C6C;*/
-/*    margin: 12px 0 16px 0;*/
-/*    line-height: 13px;*/
-/*}*/
-
-/*.toggleTitle {*/
-/*    margin: 20px auto;*/
-/*    border-top: 1.2px solid black;*/
-/*    border-bottom: 1.2px solid black;*/
-/*    width: 100%;*/
-/*}*/
-
-/*.toggleTitle:hover {*/
-/*    cursor: pointer;*/
-/*}*/
-
-/*select {*/
-/*    !*width: 136px; !* 원하는 너비설정 *!*!*/
-/*    !*height: 37px;*!*/
-/*    !*box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*!*/
-/*    background: url('../img/arrow.png') no-repeat 90% 50%;*/
-/*    -webkit-appearance: none; !* 네이티브 외형 감추기 *!*/
-/*    -moz-appearance: none;*/
-/*    appearance: none;*/
-/*    width: 130px;*/
-/*    border: 1px solid #C4C4C4;*/
-/*    box-sizing: border-box;*/
-/*    border-radius: 10px;*/
-/*    padding: 12px 13px;*/
-/*    font-family: 'Noto Sans';*/
-/*    font-style: normal;*/
-/*    font-weight: 400;*/
-/*    font-size: 12px;*/
-/*    line-height: 15px;*/
-/*    height: 40px;*/
-/*    margin-top:10px;*/
-/*    margin-bottom: 10px;*/
-/*}*/
-
-/*.select1 {*/
-/*    width: 60px;*/
-/*    background: url('../img/arrow.png') no-repeat 80% 52%;*/
-/*    background-size: 15%;*/
-/*}*/
-
-/*.select2 {*/
-/*    width: 120px;*/
-/*    background: url('../img/arrow.png') no-repeat 85% 52%;*/
-/*    background-size: 12%;*/
-/*    padding: 12px 20px;*/
-/*}*/
-
-/*.select3 {*/
-/*    width: 100px;*/
-/*    background: url('../img/arrow.png') no-repeat 90% 52%;*/
-/*    background-size: 13%;*/
-/*    padding: 12px 20px;*/
-/*}*/
-
-/*select:hover {*/
-/*    cursor: pointer;*/
-/*}*/
-
-/*.icon {*/
-/*    font-size: 10px;*/
-/*    margin-left: 6px;*/
-/*}*/
-
-/*.rotated {*/
-/*    display: inline-block;*/
-/*    transform: rotate(180deg);*/
-/*}*/
-
-/*.toggleCommentary {*/
-/*    text-align: left;*/
-/*    font-size: 9px;*/
-/*    margin-bottom: 3px;*/
-/*    color: gray;*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*}*/
-
-/*.spot {*/
-/*    font-size: 3px;*/
-/*    !*padding-bottom: 30px;*!*/
-/*}*/
-
-/*.toggle {*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*    margin-bottom: 20px;*/
-/*}*/
-
-/*.hidden {*/
-/*    display: none;*/
-/*}*/
-
-/*.rotated {*/
-/*    transform: rotate(180deg);*/
-/*}*/
-
-/*.toggleCommentaryBox {*/
-/*    width: 100%;*/
-/*    margin-top: 10px;*/
-/*}*/
-
-/*table{*/
-/*    width:100%;*/
-/*}*/
-
-/*th {*/
-/*    border: 1px solid darkgray;*/
-/*    font-family: "Noto Sans";*/
-/*    font-weight: bold;*/
-/*    font-size: 13px;*/
-/*    background: #E5E6E6;*/
-/*    line-height: 50px;*/
-/*    text-align: center;*/
-/*    border: none;*/
-/*}*/
-
-/*.thStart {*/
-/*    border-top-left-radius: 5px;*/
-/*}*/
-
-/*.thEnd {*/
-/*    border-top-right-radius: 5px;*/
-/*}*/
-
-/*td {*/
-/*    font-family: "Noto Sans";*/
-/*    font-size: 10px;*/
-/*    line-height: 20px;*/
-/*    text-align: center;*/
-/*    height: 50px;*/
-
-/*    border: 1.5px solid #E5E6E6;*/
-/*}*/
-
-/*.end {*/
-/*    border-right: none;*/
-/*}*/
-
-/*.top {*/
-/*    border-top: none;*/
-/*    line-height: 12px;*/
-/*}*/
-
-/*.bold {*/
-/*    font-family: "Noto Sans";*/
-/*    font-weight: bold;*/
-/*    font-size: 10px;*/
-/*    border-left:none;*/
-/*}*/
-
-/*.tableCommentary {*/
-/*    font-family: "Noto Sans";*/
-/*    color: #909090;*/
-/*    font-size: 7px;*/
-/*}*/
-
-/*.commentaryBox {*/
-/*    text-align: left;*/
-/*    margin: 0 auto;*/
-/*    width: 50%;*/
-/*}*/
-
-/*.commentarySet {*/
-/*    font-family: "Noto Sans";*/
-/*    font-size: 10px;*/
-/*    color: #6C6C6C;*/
-/*    margin: 0 0 3px 0;*/
-/*    line-height: 13px;*/
-/*}*/
-
-/*.submit {*/
-/*    background: #FF7000;*/
-/*    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);*/
-/*    margin-bottom : 40px;*/
-/*    height: 63px;*/
-/*    width: 360px;*/
-/*    font-family: "Inter";*/
-/*    font-size: 27px;*/
-/*    font-weight: bolder;*/
-/*    color: #FFFFFF;*/
-/*    border: none;*/
-/*}*/
-
-/*.result {*/
-/*    font-family: "Noto Sans";*/
-/*    font-weight: bold;*/
-/*    font-size: 20px;*/
-/*    margin-bottom: 30px;*/
-/*}*/
-
-/*.resultCommentary {*/
-/*    font-family: "Inter";*/
-/*    font-size: 11px;*/
-/*    line-height: 16px;*/
-
-/*}*/
-
-/*.lastComment {*/
-/*    font-family: "Inter";*/
-/*    font-size: 15px;*/
-/*    font-weight: bold;*/
-/*}*/
-
-/*.kakao {*/
-/*    background: #D9D9D9;*/
-/*    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);*/
-/*    margin-top: 40px;*/
-/*    margin-bottom : 40px;*/
-/*    height: 98px;*/
-/*    width: 317px;*/
-/*    font-family: "Inter";*/
-/*    font-size: 27px;*/
-/*    font-weight: bolder;*/
-/*    border: none;*/
-/*}*/
-
-/*.resultToggleCommentary {*/
-/*    font-family: "Noto Sans";*/
-/*    text-align: left;*/
-/*    font-size: 9px;*/
-/*    margin-bottom: 5px;*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*}*/
-
-/*.elementCommentBox {*/
-/*    display: flex;*/
-/*    margin-bottom: 30px;*/
-/*}*/
-
-/*.calculateNumberingContainer {*/
-/*    display: flex;*/
-/*    margin-top: 80px;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*}*/
-
-/*.calculateContainer {*/
-/*    background: #D9D9D9;*/
-/*    display: flex;*/
-/*    width: 100%;*/
-/*    margin-bottom: 5px;*/
-/*    height: 25px;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*}*/
-
-/*.elementComment {*/
-/*    font-family: "Noto Sans";*/
-/*    font-size: 10px;*/
-/*}*/
-
-/*.calculateNumber {*/
-/*    font-family: "Noto Sans";*/
-/*    font-weight: bold;*/
-/*    margin-right: 5px;*/
-/*    padding-bottom: 8px;*/
-/*}*/
-
-/*.calculateElement {*/
-/*    font-family: "Noto Sans";*/
-/*    font-weight: bold;*/
-/*}*/
-
-/*.five {*/
-/*    flex: 5;*/
-/*}*/
-
-/*.two {*/
-/*    flex: 2;*/
-/*}*/
-
-/*.three {*/
-/*    flex: 3;*/
-/*}*/
-
-/*.one {*/
-/*    flex: 1;*/
-/*}*/
-
-/*.four {*/
-/*    flex: 4;*/
-/*}*/
-
-/*.six {*/
-/*    flex: 6;*/
-/*}*/
-
-/*.seven {*/
-/*    flex: 7;*/
-/*}*/
-
-/*.eight {*/
-/*    flex: 8;*/
-/*}*/
-
-/*.nine {*/
-/*    flex: 9;*/
-/*}*/
-
-/*.proComment {*/
-/*    text-align: left;*/
-/*    font-family: "Noto Sans";*/
-/*    font-size: 10px;*/
