@@ -15,14 +15,14 @@
     </div>
     <div id="container1" class="container">
         <h3 id="result1" class="result">
-            Pro 서비스 월 결제 금액 : <span id="proResult1"></span>원
+            Pro 서비스 월 결제 금액 : <span id="proResult1" class="priceBold"></span>원
         </h3>
         <p id="resultCommentary" class="resultCommentary">
-            일반돌봄 대비 월 <span id="difference1"></span>원을 절약할 수
+            일반돌봄 대비 월 <span id="difference1" class="priceBold"></span>원을 절약할 수
             있습니다.
         </p>
-        <p class="resultCommentary">
-            ※일반 돌봄 월 결제 금액 : <span id="normalResult1"></span>원
+        <p class="resultCommentary gray">
+            ※일반 돌봄 월 결제 금액 : <span id="normalResult1" class="priceBold"></span>원
         </p>
     </div>
     <div id="container2" class="container">
@@ -50,7 +50,7 @@
                 <div class="elementCommentBox">
                     <div class="elementComment transparent odd"></div>
                     <div class="transparent even"></div>
-                    <div class="elementComment left3 odd">Pro 서비스 정가</div>
+                    <div class="elementComment left3 odd">A) Pro 서비스 정가</div>
                     <div class="transparent even"></div>
                     <div class="elementComment odd">서울시 지원금</div>
                 </div>
@@ -71,7 +71,7 @@
                     <div class="elementComment transparent odd"></div>
                     <div class="transparent even"></div>
 
-                    <div class="elementComment odd">시간당 서비스 이용 금액</div>
+                    <div class="elementComment odd">A`) 시간당 서비스 이용 금액</div>
                     <div class="transparent even"></div>
 
                     <div class="elementComment odd">월 돌봄시간</div>
@@ -109,7 +109,7 @@
                             <td class="tdStart tdTop">요약</td>
                             <td class="tdEnd tdTop">
                                 <div class="summary1">
-                                    <span class="bigPro">맘시터 Pro</span>전담 매니저가 시터
+                                    <span class="bigPro">맘시터 Pro</span> 전담 매니저가 시터
                                     매칭부터 지원금 정산까지 AtoZ를 관리합니다.
                                 </div>
                             </td>
@@ -117,18 +117,25 @@
                         <tr>
                             <td class="tdStart tdBottom">상세</td>
                             <td class="tdEnd tdBottom">
-                                <img
-                                        src="img/proDetail.png"
-                                        class="detailImg"
-                                        alt="상세 설명"
-                                />
+                                <div class="proDetailBox">
+                                <div class="detail1">1. 시터 탐색권 무료 제공</div>
+                                <div class="detailComment">- 유료 탐색권 구매 없이 Pro 시터를 무제한으로 직접 탐색할 수 있어요.</div>
+                                <div class="detail1">2. Pro 전담 매니저의 시터 탐색 지원</div>
+                                <div class="detailComment">- 직접 탐색이 어려운 경우 Pro 매니저가 적합한 시터를 직접 추천드려요. (평균 2주 이내 매칭 완료)</div>
+                                <div class="detail1">3. 모든 돌봄 활동 100% 보험 무료 가입</div>
+                                <div class="detailComment">- 시터의 과실로 인한 대인/대물사고를 보장해요.</div>
+                                <div class="detail1">4. 실시간 전화/카카오톡 상담채널 운영</div>
+                                <div class="detailComment">- 카카오톡 채널 : <a href="https://pf.kakao.com/_yUWqG/chat">바로가기</a></div>
+                                <div class="detailComment">- 상담 번호 : 02-2135-1384</div>
+                                <div class="detailComment">- 상담 시간 : 10시-17시</div>
+                                </div>
                             </td>
                         </tr>
                     </table>
                 </div>
 
                 <div class="calculateNumberingContainer">
-                    <div class="calculateNumber">서울시 지원금</div>
+                    <div class="calculateNumber">B) 서울시 지원금</div>
                     <div class="calculateContainer">
                         <div id="subsidy1" class="calculateElement odd"></div>
                         <div class="even">=</div>
@@ -251,9 +258,7 @@
 </div>
 <script>
     window.onload = function() {
-        let referer = document.referrer;
-
-        if (referer.includes("index.html")) {
+        if (sessionStorage.getItem("currentPage") === "Yes") {
 
         } else {
             location.href = "index.html";

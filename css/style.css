@@ -394,6 +394,14 @@ td {
     margin-bottom: 80px;
 }
 
+.priceBold {
+    font-weight: bold;
+}
+
+.gray {
+    color: #7D7D7D;
+}
+
 .proTitle {
     background: #ff7000;
     font-family: "G마켓 산스 TTF";
@@ -453,6 +461,21 @@ img {
 .proDetailBox {
     display: flex;
     flex-direction: column;
+    text-align: left;
+}
+
+.detail1 {
+    font-family: "Noto Sans";
+    font-size: 14px;
+    padding: 8px 8px 0 8px;
+}
+
+.detailComment {
+    font-family: "Noto Sans";
+    font-size: 12px;
+    padding: 0 8px 0px 24px;
+    line-height: 1.2;
+    color: #7D7D7D;
 }
 
 .proDetailLineBox {
@@ -599,6 +622,14 @@ img {
     .detailImg {
         width: 85%;
         height: auto;
+    }
+
+    .detail1 {
+        font-size: 12px;
+    }
+
+    .detailComment {
+        font-size: 10px;
     }
 
     th {
