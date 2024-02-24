@@ -438,6 +438,7 @@ img {
 
 .summary1 {
     font-family: "Noto Sans";
+    text-align: left;
 }
 
 .proDetailBox {
@@ -697,5 +698,11 @@ img {
         width:70%;
         height: 50px;
         font-size: 17px;
+        font-family: "Noto Sans";
     }
+
+}
+
+.bigPro {
+    font-size: 25px !important;
 }
